@@ -9,11 +9,11 @@ services:
     plan: free # optional; defaults to starter
     numInstances: 1
     envVars:
-      - key: DATABASE_URL # Render PostgreSQL database
-        fromDatabase:
-          name: postgresql-corrugated-59955
-          property: connectionString
+      # - key: DATABASE_URL # Render PostgreSQL database
+      #   fromDatabase:
+      #     name: postgresql-corrugated-59955
+      #     property: connectionString
 
 databases: # Render PostgreSQL database
-  - name: postgresql-corrugated-59955
-    ipAllowList: [] # only allow internal connections
+  # - name: postgresql-corrugated-59955
+  #   ipAllowList: [] # only allow internal connections
